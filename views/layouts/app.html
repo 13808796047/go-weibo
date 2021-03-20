@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{.Title}} - beego入门教程</title>
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+
+<body>
+  {{ template "layouts/header.html" .}}
+  <div class="container">
+    {{.LayoutContent}}
+  </div>
+  {{ template "layouts/footer.html" .}}
+</body>
+
+</html>
