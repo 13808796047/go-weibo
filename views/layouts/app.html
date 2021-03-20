@@ -7,11 +7,15 @@
 </head>
 
 <body>
-  {{ template "layouts/header.html" .}}
+  {{ template "layouts/_header.html" .}}
   <div class="container">
-    {{.LayoutContent}}
+    <div class="offset-md-1 col-md-10">
+      {{.LayoutContent}}
+      {{ template "layouts/_footer.html" .}}
+    </div>
   </div>
-  {{ template "layouts/footer.html" .}}
+
+  <link rel="stylesheet" href="/static/js/app.js">
 </body>
 
 </html>
